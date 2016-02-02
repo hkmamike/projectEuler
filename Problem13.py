@@ -6,7 +6,6 @@ import numpy
 
 start = time.time()
 
-
 filename = "problem13prompt.txt"
 
 with open(filename, "r") as feed:
@@ -15,6 +14,14 @@ with open(filename, "r") as feed:
         array.append(line)
 
 
+lines = [int(i) for i in array]
+
+answer = sum(lines)
+
+shortAnswer = str(answer)[0:10]
+
+print answer
+print shortAnswer
 
 
 end = time.time()

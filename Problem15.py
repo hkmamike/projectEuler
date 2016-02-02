@@ -7,15 +7,11 @@ import numpy
 start = time.time()
 
 
-filename = "problem13prompt.txt"
+gridSize = 4
 
-with open(filename, "r") as feed:
-    array = []
-    for line in feed:
-        array.append(line)
+answer = 2**gridSize + (2**gridSize-2)*2
 
-
-
+print answer
 
 end = time.time()
 duration = end - start

@@ -3,19 +3,11 @@
 import math
 import time
 import numpy
+from customFunctions import *
 
 start = time.time()
 
-
-filename = "problem13prompt.txt"
-
-with open(filename, "r") as feed:
-    array = []
-    for line in feed:
-        array.append(line)
-
-
-
+print numberOfFactors(1000)
 
 end = time.time()
 duration = end - start
