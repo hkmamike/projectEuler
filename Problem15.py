@@ -7,11 +7,12 @@ import numpy
 start = time.time()
 
 
-gridSize = 4
+def nCr(n,r):
+    f = math.factorial
+    return f(n) / f(r) / f(n-r)
 
-answer = 2**gridSize + (2**gridSize-2)*2
 
-print answer
+print nCr(40, 20)
 
 end = time.time()
 duration = end - start
